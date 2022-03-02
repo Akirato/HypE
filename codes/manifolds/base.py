@@ -115,7 +115,7 @@ class ManifoldTensor(object):
         return ManifoldTensor(ret, c=metadatas[0])
 
     def __repr__(self):
-        return str(self._t)+"c="+str(self._c)
+        return "Manifold tensor with curvature c="+str(self._c)
 
     def __neg__(self):
         return ManifoldTensor(-self._t,c=self._c)
